@@ -8,7 +8,10 @@ class sum
 	public:
 	void add()
 	{
+		
 		cin>>n>>k;
+		if(n!=0&&k!=0)
+		{
 		a= new int[n];
 		for(i=0;i<n;i++)
 		{
@@ -19,7 +22,9 @@ for(i=0;i<k;i++)
 	c=c+a[i];
 }
 cout<<c;
-
+		}
+		else
+			cout<<"no value entered";
 		
 	}
 };
